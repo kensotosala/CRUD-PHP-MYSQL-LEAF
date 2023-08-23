@@ -10,4 +10,9 @@ class ContactosController extends Controller
     {
         return view('contactos/index', ['contactos' => Contactos::all()]);
     }
+
+    public function crear()
+    {
+        return view('contactos/crear');
+    }
 }
