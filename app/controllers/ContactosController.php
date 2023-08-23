@@ -15,4 +15,16 @@ class ContactosController extends Controller
     {
         return view('contactos/crear');
     }
+
+    public function agregar()
+    {
+        $contacto = new Contactos;
+        $contacto->nombre = (app()->request()->get('nombre'));
+        $contacto->primer_apellido = (app()->request()->get('primer_apellido'));
+        $contacto->segundo_apellido = (app()->request()->get('segundo_apellido'));
+        $contacto->correo = (app()->request()->get('correo'));
+        $contacto->save();
+
+        return response()->redirect('/');
+    }
 }

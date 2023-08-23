@@ -1,10 +1,6 @@
 <?php view('header'); ?>
 <!-- php -S localhost:8000 -->
 
-
-
-
-
 <div class="card mt-3">
     <div class="card-header">
         <a name="" id="" class="btn btn-primary" href="/contactos/crear" role="button">Agregar Contacto</a>
