@@ -10,6 +10,8 @@ app()->post('/contactos', 'ContactosController@agregar');
 
 app()->get('/contactos/{id}', 'ContactosController@borrar');
 
+app()->post('/contactos/{id}', 'ContactosController@actualizar');
+
 app()->get('/home', 'TestsController@index');
 
 app()->get('/test', 'TestsController@test');

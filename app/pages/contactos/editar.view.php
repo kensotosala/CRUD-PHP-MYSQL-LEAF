@@ -6,7 +6,7 @@
             Contactos
         </div>
         <div class="card-body">
-            <form action="/contactos" method="post">
+            <form action="/contactos/<?php echo $contacto['id']; ?>" method="post">
                 <div class="mb-3">
                     <label for="nombre" class="form-label">Nombre:</label>
                     <input type="text" class="form-control" value="<?php echo $contacto['nombre']; ?>" name="nombre" id="nombre" aria-describedby="helpId" placeholder="Ingrese su nombre" required>
@@ -27,7 +27,7 @@
                     <input type="email" class="form-control" value="<?php echo $contacto['correo']; ?>" name="correo" id="correo" aria-describedby="helpId" placeholder="Ingrese su correo" required>
                 </div>
 
-                <button type="submit" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-success">Actualizar</button>
                 <a class="btn btn-primary" href="/" role="button">Cancelar</a>
 
             </form>
