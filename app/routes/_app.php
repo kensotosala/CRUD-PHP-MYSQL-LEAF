@@ -2,6 +2,8 @@
 
 app()->get('/', 'ContactosController@index');
 
+app()->get('/contactos/editar/{id}', 'ContactosController@editar');
+
 app()->get('/contactos/crear', 'ContactosController@crear');
 
 app()->post('/contactos', 'ContactosController@agregar');

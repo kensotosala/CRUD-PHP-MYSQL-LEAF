@@ -33,4 +33,13 @@ class ContactosController extends Controller
         Contactos::destroy($id);
         return response()->redirect('/');
     }
+
+
+    public function editar($id)
+    {
+        $datosContacto = Contactos::find($id);
+        // print_r($datosContacto);
+
+        return view('contactos/editar', ['contacto' => $datosContacto]);
+    }
 }
