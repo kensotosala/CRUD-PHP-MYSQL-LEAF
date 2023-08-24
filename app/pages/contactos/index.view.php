@@ -26,7 +26,7 @@
                             <td><?php echo $contacto['primer_apellido']; ?></td>
                             <td><?php echo $contacto['segundo_apellido']; ?></td>
                             <td><?php echo $contacto['correo']; ?></td>
-                            <td>Editar | Borrar</td>
+                            <td>Editar | <a name="" id="" class="btn btn-danger" href="/contactos/<?php echo $contacto['id']; ?>" role="button">Borrar</a></td>
                         </tr>
                     <?php endforeach ?>
                 </tbody>

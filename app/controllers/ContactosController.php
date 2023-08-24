@@ -27,4 +27,10 @@ class ContactosController extends Controller
 
         return response()->redirect('/');
     }
+
+    public function borrar($id)
+    {
+        Contactos::destroy($id);
+        return response()->redirect('/');
+    }
 }
